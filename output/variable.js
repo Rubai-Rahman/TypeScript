@@ -1,37 +1,34 @@
-let greetings: string = "hello Abir";
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+let greetings = "hello Abir";
 console.log(greetings);
 greetings.toUpperCase();
 //number
-let userId: number = 334455.3;
+let userId = 334455.3;
 //boolean
-let isLoggedIn: boolean = false;
-
-export {};
-
-let b: string | number;
+let isLoggedIn = false;
+let b;
 //this process of declaring data type is call explicit data declaring
 //array
-let a: (string | number)[] = [];
+let a = [];
 b = "Abir";
 a.push("Abir", 4 /*false*/); // AS in here boolean is not defined in declare its showing error.
-
 //object
-let c: object;
+let c;
 c = {
-  name: "abir",
-  id: 34,
-  isPerson: true,
+    name: "abir",
+    id: 34,
+    isPerson: true,
 };
 // we can add an array in object data type as in js array is also a type of object.
 c = [1, 2, 3];
 // Any type
 // It allow us to use any data type as we licked
-let d: any[] = [];
+let d = [];
 d.push("bangladesh");
 d.push(false);
 d.push(15);
-
 //Function Type
 const myFunc = () => {
-  console.log("Hello");
+    console.log("Hello");
 };
