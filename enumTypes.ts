@@ -1,3 +1,5 @@
+//Enum let use used custom properties from a object as a type
+
 enum RType {
   SUCCESS,
   FAILURE,

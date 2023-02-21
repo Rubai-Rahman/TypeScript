@@ -10,6 +10,7 @@ function drawRectangle(options:rectAngleOptions){
   let length = options.length;
   return width * length;
 }
+
 drawRectangle({
   width: 30,
   length:20

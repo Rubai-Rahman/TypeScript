@@ -10,13 +10,14 @@ function createProfile(profile: Profile): Profile {
 }
 
 type Guitarist = {
-  name: string,
-  active?: boolean,
+  name: string;
+  active?: boolean;
   //ternary operator here let us make the properties optional
-  albums: (string|number)[]
-}
+  albums: (string | number)[];
+};
 
 let jp: Guitarist = {
-  name: 'Abir',
-  albums:[10,15,16]
-}
+  name: "Abir",
+  albums: [10, 15, 16],
+};
+//

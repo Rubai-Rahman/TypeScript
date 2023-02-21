@@ -19,3 +19,20 @@ const two = (num) => {
     return num + 3;
 };
 console.log(two(20));
+const logmsg = (message) => {
+    console.log(message);
+};
+//optional parameter
+const addAll = (a, b, c) => {
+    //typeGard
+    if (typeof c !== "undefined") {
+        return a + b + c;
+    }
+    return a + b;
+};
+console.log(addAll(10, 32));
+//rest parameter
+const total = (a, ...nums) => {
+    return a + nums.reduce((prev, curr) => prev + curr);
+};
+logmsg(total(1, 3, 4));

@@ -1,4 +1,4 @@
-function addTwo(num:number) {
+function addTwo(num: number) {
   return num + 2;
 }
 
@@ -21,24 +21,22 @@ const two = (num: number): number => {
 };
 console.log(two(20));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const logmsg = (message: any): void => {
+  console.log(message);
+};
+//optional parameter
+const addAll = (a: number, b: number, c?: number): number => {
+  //typeGard
+  if (typeof c !== "undefined") {
+    return a + b + c;
+  }
+  return a + b;
+};
+console.log(addAll(10, 32));
+//rest parameter
+const total = (a: number, ...nums: number[]): number => {
+  return a + nums.reduce((prev, curr) => prev + curr);
+};
+logmsg(total(1, 3, 4));
 
 export {};

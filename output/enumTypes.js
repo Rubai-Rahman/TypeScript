@@ -1,4 +1,5 @@
 "use strict";
+//Enum let use used custom properties from a object as a type
 var RType;
 (function (RType) {
     RType[RType["SUCCESS"] = 0] = "SUCCESS";
